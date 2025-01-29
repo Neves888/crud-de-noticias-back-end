@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register --require tsconfig-paths/register 'src/tests/**/*.test.ts'",
+    "test": "MONGO_URI=mongodb://mongo:27017/noticiasdb mocha --require ts-node/register --require tsconfig-paths/register 'src/tests/**/*.test.ts'",
     "start": "node dist/app.js",
     "build": "tsc",
     "dev": "ts-node src/app.ts"
@@ -25,10 +25,13 @@
     "@types/mocha": "^10.0.10",
     "@types/mongoose": "^5.11.96",
     "@types/node": "^22.12.0",
-    "chai": "^4.3.7",
+    "@types/sinon": "^17.0.3",
+    "chai": "^4.5.0",
     "chai-http": "^4.4.0",
     "mocha": "^11.1.0",
+    "sinon": "^19.0.2",
     "ts-node": "^10.9.2",
+    "tsconfig-paths": "^4.2.0",
     "typescript": "^5.0.0"
   }
 }
