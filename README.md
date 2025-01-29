@@ -44,3 +44,5 @@ Este é um projeto de uma API simples para gerenciamento de notícias. A API per
 **5. Após subir os containers, a API estará disponível na URL** ```http://localhost:3000/noticias```;
 
 **6. Parar os containers basta usar o comando** ```docker-compose down```. 
+
+**7. Parar rodar os testes use o comando** ```npm run test```. 
