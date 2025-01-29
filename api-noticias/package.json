@@ -3,7 +3,10 @@
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
-    "test": "mocha --require ts-node/register --require tsconfig-paths/register 'src/tests/**/*.test.ts'"
+    "test": "mocha --require ts-node/register --require tsconfig-paths/register 'src/tests/**/*.test.ts'",
+    "start": "node dist/app.js",
+    "build": "tsc",
+    "dev": "ts-node src/app.ts"
   },
   "keywords": [],
   "author": "",
